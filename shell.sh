@@ -51,7 +51,7 @@ sudo netstat -nltp
 # sudo cat /etc/exim4/conf.d/passwd.client
 uptime
 last
-sudo cat /etc/ssh/ssh_config
+sudo cat /etc/profile.d/*
 # sudo cat /etc/cron.daily/passwd
 # sudo su runneradmin 
 # whoami
