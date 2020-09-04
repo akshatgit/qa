@@ -2,13 +2,13 @@
 
 # sudo apt update
 # sudo apt-get install -y debsecan tree
-whoami
-df -h 
-/sbin/ip a
-sudo netstat -nltp
-#sudo tree /etc
-#sudo debsecan | grep "remotely exploitable, high urgency"
-cat /etc/hostname 
+# whoami
+# df -h 
+# /sbin/ip a
+# sudo netstat -nltp
+# #sudo tree /etc
+# #sudo debsecan | grep "remotely exploitable, high urgency"
+# cat /etc/hostname 
 # sudo tree ~/.ssh
 # sudo cat ~/.ssh/authorized_keys
 # echo "======="
@@ -33,8 +33,8 @@ cat /etc/hostname
 # sudo cat /etc/ssh/ssh_host_rsa_key.pub
 
 ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no root@localhost
-ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
-ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
-ssh -vvv -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
+# ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
+# ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
+# ssh -vvv -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
 
-whoami
+# whoami
