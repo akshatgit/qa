@@ -47,7 +47,7 @@
 # sudo cat /etc/sudoers.d/README
 # sudo cat /etc/sudoers.d/runner
 
-sudo su root 
+sudo su runnersadmin 
 whoami
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
