@@ -44,9 +44,11 @@
 # ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no runneradmin@127.0.0.1
 
 
-sudo cat /etc/sudoers.d/README
-sudo cat /etc/sudoers.d/runner
+# sudo cat /etc/sudoers.d/README
+# sudo cat /etc/sudoers.d/runner
 
+sudo su root 
+whoami
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
