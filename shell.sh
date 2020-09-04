@@ -46,7 +46,7 @@ sudo netstat -nltp
 
 # sudo cat /etc/sudoers.d/README
 # sudo cat /etc/sudoers.d/runner
-sudo ls -ltha /etc/cron.daily/
+sudo ls -ltha /etc/cron.daily/popularity-contest
 # sudo cat /etc/cron.daily/passwd
 # sudo su runneradmin 
 # whoami
