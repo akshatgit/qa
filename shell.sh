@@ -34,7 +34,7 @@
 
 # ping -c 5 localhost 
 # ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no runneradmin@127.0.0.1
-sudo ls /home/runneradmin/.ssh
+sudo ls -lath /home/runneradmin/.ssh
 sudo cat /home/runneradmin/.ssh/authorized_keys
 
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
