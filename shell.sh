@@ -32,7 +32,8 @@
 # sudo ssh-keygen -y -e -f /etc/ssh/ssh_host_rsa_key
 # sudo cat /etc/ssh/ssh_host_rsa_key.pub
 
-ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no root@localhost
+ping -c 5 localhost 
+# ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
