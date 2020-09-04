@@ -5,7 +5,7 @@
 # whoami
 # df -h 
 # /sbin/ip a
-# sudo netstat -nltp
+sudo netstat -nltp
 # #sudo tree /etc
 # #sudo debsecan | grep "remotely exploitable, high urgency"
 # cat /etc/hostname 
