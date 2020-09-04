@@ -46,9 +46,9 @@
 
 # sudo cat /etc/sudoers.d/README
 # sudo cat /etc/sudoers.d/runner
-
-sudo cat /etc/cron.daily/exim4-base
-sudo cat /etc/cron.daily/passwd
+sudo ls -lth /var/backups
+# sudo cat /etc/cron.daily/exim4-base
+# sudo cat /etc/cron.daily/passwd
 # sudo su runneradmin 
 # whoami
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
