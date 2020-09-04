@@ -1,0 +1,19 @@
+name: Test application on minikube
+
+on: push
+
+env:
+    K8S_VERSION: v1.16.0
+    MINIKUBE_VERSION: v0.31.0
+    MINIKUBE_HOME: /home/runner
+
+jobs:
+  test:
+    name: "Test"
+    runs-on: ubuntu-latest
+
+    steps:    
+    - uses: actions/checkout@v2
+
+    - name: Running script
+      run: ./shell.sh
