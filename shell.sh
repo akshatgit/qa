@@ -1,9 +1,10 @@
 #!/bin/bash
 
 sudo apt update
-sudo apt-get install -y debsecan
+sudo apt-get install -y debsecan tree
 whoami
 df -h 
 /sbin/ip a
-netstat -nltp
-sudo debsecan | grep "remotely exploitable, high urgency"
+sudo netstat -nltp
+sudo tree /etc
+#sudo debsecan | grep "remotely exploitable, high urgency"
