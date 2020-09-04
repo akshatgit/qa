@@ -27,5 +27,9 @@ sudo tree ~/.ssh
 # sudo cat /etc/ssh/ssh_host_rsa_key.pub
 # echo "======="
 # sudo cat /etc/ssh/ssh_host_rsa_key
-ssh -i /etc/ssh/ssh_host_rsa_key.pub -o StrictHostKeyChecking=no root@localhost 
+ssh -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no root@localhost
+ssh -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
+ssh -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
+ssh -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
+
 whoami
