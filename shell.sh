@@ -47,8 +47,9 @@
 # sudo cat /etc/sudoers.d/README
 # sudo cat /etc/sudoers.d/runner
 
-sudo su runneradmin 
-whoami
+sudo service exim4 status
+# sudo su runneradmin 
+# whoami
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
