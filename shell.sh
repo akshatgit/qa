@@ -6,4 +6,4 @@ whoami
 df -h 
 /sbin/ip a
 netstat -nltp
-debsecan | grep "remotely exploitable, high urgency"
+debsecan 
