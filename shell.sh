@@ -9,27 +9,32 @@ sudo netstat -nltp
 #sudo tree /etc
 #sudo debsecan | grep "remotely exploitable, high urgency"
 cat /etc/hostname 
-sudo tree ~/.ssh
-# sudo cat ~/.ssh/authorized_keys
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_dsa_key
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_dsa_key.pub
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_ecdsa_key
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_ecdsa_key.pub
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_ed25519_key
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_ed25519_key.pub
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_rsa_key.pub
-# echo "======="
-# sudo cat /etc/ssh/ssh_host_rsa_key
-ssh -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no root@localhost
-ssh -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
-ssh -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
-ssh -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
+# sudo tree ~/.ssh
+sudo cat ~/.ssh/authorized_keys
+echo "======="
+sudo cat /etc/ssh/ssh_host_dsa_key
+echo "======="
+sudo ssh-keygen -y -e -f /etc/ssh/ssh_host_dsa_key
+sudo cat /etc/ssh/ssh_host_dsa_key.pub
+echo "======="
+sudo cat /etc/ssh/ssh_host_ecdsa_key
+echo "======="
+sudo ssh-keygen -y -e -f /etc/ssh/ssh_host_ecdsa_key
+sudo cat /etc/ssh/ssh_host_ecdsa_key.pub
+echo "======="
+sudo cat /etc/ssh/ssh_host_ed25519_key
+echo "======="
+sudo ssh-keygen -y -e -f /etc/ssh/ssh_host_ed25519_key
+sudo cat /etc/ssh/ssh_host_ed25519_key.pub
+echo "======="
+sudo cat /etc/ssh/ssh_host_rsa_key
+echo "======="
+sudo ssh-keygen -y -e -f /etc/ssh/ssh_host_rsa_key
+sudo cat /etc/ssh/ssh_host_rsa_key.pub
+
+# ssh -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no root@localhost
+# ssh -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
+# ssh -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
+# ssh -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
 
 whoami
