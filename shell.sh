@@ -36,7 +36,9 @@
 sudo ls -lath /home/runneradmin/.ssh
 sudo cat /etc/ssh/ssh_host_rsa_key.pub | sudo tee /home/runneradmin/.ssh/authorized_keys
 sudo ls -lath /home/runneradmin/.ssh
+echo "Sleepingggggg"
 sleep 5
+echo "Awakeeeeeee"
 
 sudo cat /home/runneradmin/.ssh/authorized_keys
 # ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no runneradmin@127.0.0.1
