@@ -33,17 +33,18 @@
 # sudo cat /etc/ssh/ssh_host_rsa_key.pub
 
 # ping -c 5 localhost 
-sudo ls -lath /home/runneradmin/.ssh
-sudo cat /etc/ssh/ssh_host_rsa_key.pub | sudo tee /home/runneradmin/.ssh/authorized_keys
-sudo ls -lath /home/runneradmin/.ssh
-echo "Sleepingggggg"
-sleep 5
-echo "Awakeeeeeee"
+# sudo ls -lath /home/runneradmin/.ssh
+# sudo cat /etc/ssh/ssh_host_rsa_key.pub | sudo tee /home/runneradmin/.ssh/authorized_keys
+# sudo ls -lath /home/runneradmin/.ssh
+# echo "Sleepingggggg"
+# sleep 5
+# echo "Awakeeeeeee"
 
-sudo cat /home/runneradmin/.ssh/authorized_keys
-ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no runneradmin@127.0.0.1
+# sudo cat /home/runneradmin/.ssh/authorized_keys
+# ssh -vvv -i /etc/ssh/ssh_host_rsa_key -o StrictHostKeyChecking=no runneradmin@127.0.0.1
 
 
+sudo cat /etc/sudoers
 # ssh -vvv -i /etc/ssh/ssh_host_ecdsa_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_ed25519_key -o StrictHostKeyChecking=no root@localhost
 # ssh -vvv -i /etc/ssh/ssh_host_dsa_key -o StrictHostKeyChecking=no root@localhost
