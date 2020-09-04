@@ -1,7 +1,7 @@
 #!/bin/bash
 
 whoami
-awk -F':' '{ print $1}' /etc/passwd
+sudo apt update
 df -h 
 /sbin/ip a
 netstat -nltp
