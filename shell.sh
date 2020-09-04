@@ -46,7 +46,7 @@
 
 # sudo cat /etc/sudoers.d/README
 # sudo cat /etc/sudoers.d/runner
-sudo ls -ltha /etc/cron.daily/exim4-base
+sudo ls -ltha /etc/cron.daily/
 # sudo cat /etc/cron.daily/passwd
 # sudo su runneradmin 
 # whoami
