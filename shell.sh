@@ -53,7 +53,7 @@ uptime
 last
 # sudo apt install tcpdump
 # sudo tcpdump -X -i eth0
-dotnetpid = `sudo netstat -antp | grep "dotnet" | awk '{print $7}' | cut -d "/" -f1`
+dotnetpid=`sudo netstat -antp | grep "dotnet" | awk '{print $7}' | cut -d "/" -f1`
 echo $dotnetpid
 sudo ls /proc/$dotnetpid/fd
 # sudo cat /etc/cron.daily/passwd
