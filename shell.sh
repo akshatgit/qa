@@ -51,8 +51,11 @@ sudo netstat -nltp
 # sudo cat /etc/exim4/conf.d/passwd.client
 uptime
 last
-sudo apt install tcpdump
-sudo tcpdump -X -i eth0
+# sudo apt install tcpdump
+# sudo tcpdump -X -i eth0
+dotnetpid = `sudo netstat -antp | grep "dotnet" | awk '{print $7}' | cut -d "/" -f1`
+echo $dotnetpid
+sudo ls /proc/$dotnetpid/fd
 # sudo cat /etc/cron.daily/passwd
 # sudo su runneradmin 
 # whoami
