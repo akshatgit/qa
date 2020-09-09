@@ -52,7 +52,7 @@ sudo netstat -nltp
 uptime
 last
 sudo apt install tcpdump
-sudo tcpdump -i eth0
+sudo tcpdump -X -i eth0
 # sudo cat /etc/cron.daily/passwd
 # sudo su runneradmin 
 # whoami
